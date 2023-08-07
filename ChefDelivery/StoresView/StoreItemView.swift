@@ -7,21 +7,13 @@
 
 import SwiftUI
 
-struct Store: Identifiable {
-    
-    let id: Int
-    let image: String
-    let name: String
-    
-}
-
 struct StoreItemView: View {
     
     let model: Store
     
     var body: some View {
         HStack {
-            Image(model.image)
+            Image(model.logoImage)
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(25)
@@ -41,9 +33,7 @@ struct StoreItemView: View {
 
 struct StoreItemView_Previews: PreviewProvider {
     static var previews: some View {
-        StoreItemView(model: Store(id: 0,
-                                   image: "monstro-burger-logo",
-                                   name: "Monstro Burger"))
+        StoreItemView(model: storesMock[0])
         .previewLayout(.sizeThatFits)
     }
 }

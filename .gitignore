@@ -1,0 +1,5 @@
+.DS_Storegit status
+build/
+DerivedData/
+.build/
+xcuserdata/

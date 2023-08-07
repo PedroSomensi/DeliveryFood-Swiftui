@@ -9,24 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        
+        NavigationView {
             
-            NavigationBar()
-                .padding(.horizontal, 15)
-            
-            ScrollView(.vertical,
-                       showsIndicators: true) {
+            VStack {
                 
-                VStack(spacing: 20) {
-                    OrderTypeGridView()
-                    CarouselTabView()
-                    StoresContainerView()
+                NavigationBar()
+                    .padding(.horizontal, 15)
+                
+                ScrollView(.vertical,
+                           showsIndicators: true) {
+                    
+                    VStack(spacing: 20) {
+                        OrderTypeGridView()
+                        CarouselTabView()
+                        StoresContainerView()
+                    }
+                    
                 }
                 
-            }
+            }.padding()
             
-        }.padding()
+        }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

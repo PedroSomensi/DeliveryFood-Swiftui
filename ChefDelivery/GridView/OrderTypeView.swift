@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OrderTypeView: View {
     
-    let model: OrderType
+    let model: Order
     
     var body: some View {
         
@@ -33,7 +33,7 @@ struct OrderTypeView: View {
 struct OrderTypeView_Previews: PreviewProvider {
     static var previews: some View {
         OrderTypeView(
-            model: OrderType(
+            model: Order(
                 id: 0,
                 name: "Restaurantes",
                 image: "hamburguer"

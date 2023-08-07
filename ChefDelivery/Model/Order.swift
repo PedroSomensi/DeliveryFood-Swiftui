@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OrderType: Identifiable {
+struct Order: Identifiable {
     
     let id: Int
     let name: String
