@@ -16,7 +16,7 @@ struct HomeHeaderView: View {
         VStack {
             
             Text("Chef Delivery")
-                .font(.system(size: 40))
+                .font(.system(size: 48))
                 .fontWeight(.heavy)
                 .foregroundColor(Color.customRed())
                 .opacity(isAnimating ? 1 : 0)
